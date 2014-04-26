@@ -8,7 +8,12 @@ var Presen = {
         start_time.setMilliseconds(0);
         this.start_time = start_time;
 
-        this.sections = $('div.slide');
+        var sections = $('div.slide');
+        var section_length = sections.length;
+        for (var i = 0; i < section_length; i++) {
+            sections[i].setAttribute('id', 'mg_slide' + i);
+        }
+        this.sections = sections;
 
         this.init_page();
         this.rewrite();

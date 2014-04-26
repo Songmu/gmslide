@@ -20,16 +20,7 @@ body * {
 }
 
 #topics {
-    top: 0;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 60px;
-    margin-bottom: 5px;
-    padding: 1em 4% 4%
-    width: 92%;
-    text-align : left;
-    font-size : 400%;
-    font-weight: bold;
+    top: 20px;
     z-index: 2;
 }
 
@@ -71,6 +62,13 @@ blockquote {
     font-size: 1em;
 }
 
+.slide {
+    padding-left: 30px;
+    text-align : left;
+    font-size : 400%;
+    font-weight: bold;
+}
+
 .slide h1 {
     font: 2em Arial, Verdana, sans-serif;
     white-space: normal;
@@ -82,11 +80,10 @@ blockquote {
 
 .slide h2 {
     background: url(img/pen.png) right bottom no-repeat;
-    height: 30px;
+    height: 40px;
+    font-size: 44px;
     margin-bottom: .1em;
-    padding-right: 54px;
-    padding-top: 20px;
-    padding-bottom: .3em;
+    padding: 20px 54px .3em 0;
     border-bottom: dotted 4px #999;
     font-weight: bold;
 }

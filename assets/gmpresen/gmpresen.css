@@ -161,3 +161,27 @@ footer {
     color: #666;
     background-color: #CCCCFF;
 }
+
+#mg_slide0 {
+    padding-top: 3.5em;
+    font-size: 90%;
+}
+#mg_slide0 h1 {
+    margin: 1em 0 1.33em;
+    padding: 5px 0 5px 20px;
+    font-weight: bold;
+    font-size: 50px;
+    white-space: normal;
+    color: #000;
+}
+
+#mg_slide0 h2 {
+    background: none;
+    border: none;
+}
+
+#mg_slide0 h3 {
+    margin-top: 0.3em;
+    font-size: 1.2em;
+}
+

@@ -124,16 +124,6 @@ body * {
     float: right;
 }
 
-B {
-    font-size: 150%;
-    color:#511;
-}
-
-pre B {
-    color: red;
-    font-size: 100%;
-}
-
 .center {
     text-align: center;
 }

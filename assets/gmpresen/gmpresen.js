@@ -3,8 +3,11 @@
 /*global $: false, document, setInterval, clearInterval, location, window, alert, _ */
 
 var Presen = {
-    start_time: new Date(),
     init: function (slides) {
+        var start_time = new Date();
+        start_time.setMilliseconds(0);
+        this.start_time = start_time;
+
         this.sections = slides;
 
         this.init_page();

@@ -9,7 +9,10 @@ body {
 body * {
     margin: 0;
     padding : 0;
-    /* word-break: break-all; */
+}
+
+#slides {
+    display: none;
 }
 
 #topics {
@@ -122,19 +125,4 @@ body * {
 #header #page_info {
     padding-right: 20px;
     float: right;
-}
-
-.center {
-    text-align: center;
-}
-
-.clearfix:after {
-    content: ""; 
-    display: block; 
-    clear: both;
-}
-
-.takahashi #topics {
-    vertical-align: middle;
-    height: 100%;
 }

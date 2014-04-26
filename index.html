@@ -6,26 +6,76 @@
     <link href="assets/gmpresen/gmpresen.css" rel="stylesheet" type="text/css" media="all" />
 </head>
 <body>
+
     <div id="container">
-        <div id="header">
+        <header>
             <div id="page_info">
                 <span id="time">TIME</span> <span id="used_time">rest time</span> <span id="current_page">current</span>/<span id="total_page">total</span>
             </div>
-        </div>
+        </header>
 
         <div id="topics">TopicsPlaceHolder</div>
+
+        <footer>
+          <h2>Songmu</h2>
+          <h2>songmu@cpan.org</h2>
+          <div id="controls"></div>
+        <footer>
     </div>
 
     <div id="slides">
-        <div class="slide">
-            <h1>あういえ</h1>
-        </div>
-        <div class="slide">
-            <h2>あういえ</h2>
-        </div>
-        <div class="slide">
-            <h2>おおお</h2>
-        </div>
+
+<div class="slide">
+    <h1>姫ヒャクを支える技術</h1>
+</div>
+
+<div class="slide">
+<h2>Profile</h2>
+
+<p><img src="images/songmu100.jpg" alt="songmu" /></p>
+
+<ul>
+<li>id: <a href="https://twitter.com/songmu">Songmu</a> (ソンムー)</li>
+<li>Masayuki Matsuki</li>
+<li><a href="http://www.songmu.jp/riji/">http://www.songmu.jp/riji/</a></li>
+<li><a href="https://metacpan.org/author/SONGMU">https://metacpan.org/author/SONGMU</a></li>
+<li>Arkメンテナ</li>
+<li>Puncheur作者</li>
+<li>Web Applicationを何故か2つCPANにあげている</li>
+</ul>
+
+</div>
+
+<div class="slide">
+<h2>姫騎士と最後の百竜戦争</h2>
+
+<p><img src="images/princess.png" alt="姫騎士と最後の百竜戦争" /></p>
+
+<ul>
+<li>スマホで遊ぶアクションRPG</li>
+<li>Android版 2/7リリース</li>
+<li>40万ダウンロード突破</li>
+<li>iPhone版近日配信予定</li>
+<li>姫ヒャクと略すらしい</li>
+<li>ArkでTengでTime::Piece::Plusな感じ</li>
+</ul>
+
+</div>
+
+<div class="slide">
+<h2>App::RunCron</h2>
+
+<pre><code>% runcron -- /path/to/command
+</code></pre>
+
+<ul>
+<li>cronのお供に欠かせない存在になった</li>
+<li>cronlogを拡張して、指定したコマンドの終了コードに応じて処理を切り分けられる</li>
+<li>詳しくはWEB+DB Press Vol.79を(ry</li>
+</ul>
+
+</div>
+
     </div>
 
     <script type="text/javascript" src="assets/jquery-2.0.2.min.js"></script>

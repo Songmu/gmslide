@@ -1,9 +1,33 @@
 body {
     margin: auto;
-    font-family:"ProfontX","Lora",Georgia,"Times New Roman",Times,serif;
-    font-size:17px;
-    color:#333;
-    background-color:#f6f6f6;
+    font-family: "ProfontX","Lora",Georgia,"Times New Roman",Times,serif;
+    font-size: 14px;
+    background: url(img/looseleaf.png) repeat-y;
+}
+
+header, footer, #topics {
+    position: absolute;
+    width: 100%;
+}
+
+header {
+    background: #66f;
+    top: 0;
+    height: 1.3em;
+    text-align: right;
+    color: #eee;
+    vertical-align: top;
+}
+
+footer {
+    bottom: 0;
+    height: 2.5em;
+    color: #AAB;
+    font-size: 0.5em;
+    font-weight: bold;
+    padding: 1em 0;
+    color: #666;
+    background-color: #CCCCFF;
 }
 
 body * {
@@ -16,91 +40,93 @@ body * {
 }
 
 #topics {
+    top: 0;
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 60px;
     margin-bottom: 5px;
+    padding: 1em 4% 4%
+    width: 92%;
     text-align : left;
     font-size : 400%;
     font-weight: bold;
-    text-align: center;
+    z-index: 2;
 }
 
-#topics h2 {
-    font-style: bold;
-    color: #532232;
+a {
+    color: #c30;
+    text-decoration: none;
 }
 
-#topics h3 {
-    padding : 15px;
-    font-size : 220%;
-    line-height : 1;
-    font-style: italic;
+a:hover {
+    text-decoration: underline;
 }
 
-#topics pre {
-    padding-left: 4px;
-    font-size: 80%;
-    background-color: #eceeee;
-    word-break: break-all;
-    text-align: left;
-    padding:0 3px 2px;
-    font-family:Monaco,Menlo,Consolas,"Courier New",monospace;
-    -webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;
-    color: black;
+:link, :visited {
+    text-decoration: none;
 }
 
-#topics ul {
-    text-align: left;
-}
-#topics ul li {
-    text-align: left;
-    margin-bottom: 90px;
-}
-
-#topics .code {
-    padding-left: 4px;
-    font-size: 80%;
-    background-color: #202010;
-    text-align: left;
+h1, h2, h3, h4 {
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    font-weight: inherit;
 }
 
-#topics .list {
-    font-size: 90%;
-    text-align: left;
-    margin-bottom: 18px;
-}
-#topics .list::before {
-    content: '・'
-}
-#topics .plain_list .list::before { content: '' }
-
-#topics .list_child {
-    font-size: 80%;
-    text-align: left;
-    margin-left: 40px;
-}
-#topics .list_child::before {
-    content: '・'
+ul, pre {
+    margin: 0;
+    line-height: 1em;
 }
 
-#topics .note {
-    text-align: right;
-    color: #cccccc;
-    font-size: small;
+blockquote, q {font-style: italic;}
+blockquote {
+    background: url(img/quoteclip.png) left bottom no-repeat;
+    padding: 0 2em 0 45px;
+    margin: .2em 1.5em 0.5em;
+    border-top: 3px solid #EEE;
+    border-right: 3px solid #EEE;
+    font-size: 1em;
 }
-#topics a {
-    color: #ccee00;
+
+.slide h1 {
+  position: static;
+  margin: 1.1em 0 1.33em; padding: 5px 0 5px 20px;
+  margin-left: 50px; padding: 0; white-space: normal;
+  font: 2em Arial, Verdana, sans-serif; white-space: normal;
 }
-#topics a:hover {
-    color: #eeee00;
+.slide h2 {
+    background: url(img/pen.png) right bottom no-repeat;
+    height: 30px;
+    margin-bottom: .1em;
+    padding-right: 54px;
+    padding-top: 20px;
+    padding-bottom: .3em;
+    border-bottom: dotted 4px #999;
+    font-weight: bold;
 }
-#topics img {
+.slide h3 {font-size: 130%;}
+
+div.slide > ul > li {
+    background: url(img/pin.png) left top no-repeat;
+    padding-left: 32px;
+    list-style-type: none;
 }
-#topics code {
-    background-color: #eceeee;
-    word-break: none;
-    border: 1px solid #ddd;
+
+.slide p {
+    margin-left: 50px;
+    margin: 0.5em 0;
+    padding: 0;
+}
+
+.slide img {
+    float: left;
+    background: #fff;
+    margin: 0 10px 10px 0;
+    padding: 3px;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #999;
+    border-bottom: 1px solid #999;
 }
 
 /* ------------------------------------------------------------------------- */

@@ -8,7 +8,7 @@ var Presen = {
         start_time.setMilliseconds(0);
         this.start_time = start_time;
 
-        this.sections = slides;
+        this.sections = $('div.slide');
 
         this.init_page();
         this.rewrite();
@@ -41,9 +41,9 @@ var Presen = {
     has_prev: function () {
         return this.page > 0;
     },
-    prev: function(){
-        if (! this.has_prev()) {
-            return; // nop.
+    prev: function (){
+        if (!this.has_prev()) {
+            return;
         }
         this.page--;
         this.rewrite();
@@ -65,7 +65,7 @@ var Presen = {
             topic.html(' ' +topic.width() + " " + body.width());
         }
     },
-    rewrite: function() {
+    rewrite: function () {
         var p = this.page;
         var slide = this.sections[p];
 
@@ -125,9 +125,7 @@ Presen.observe_key_event = function () {
 
 $(
   function (){
-    var slides = $('div.slide');
-
-    Presen.init(slides);
+    Presen.init();
     Presen.observe_key_event();
   });
 })();

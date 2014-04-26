@@ -106,10 +106,10 @@ Presen.observe_key_event = function () {
             case 74: // j
             case 40: Presen.next();e.stopPropagation();break;
 
-            case 70: // f
-                $('#footer').toggle();
-                e.stopPropagation();
-                break;
+//            case 70: // f
+//                $('#footer').toggle();
+//                e.stopPropagation();
+//                break;
 
             case 190: // > and .
                 Presen.change_font_size('#topics', +10);

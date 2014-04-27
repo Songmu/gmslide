@@ -1,6 +1,11 @@
 (function () {
 "use strict";
-/*global $: false, document, setInterval, clearInterval, location, window, alert, _ */
+
+var two_column = function(i) {
+    var m = "" + i;
+    if (m.length == 1) { m = "0"+m; }
+    return m;
+};
 
 var Presen = {
     init: function (slides) {
@@ -8,13 +13,7 @@ var Presen = {
         start_time.setMilliseconds(0);
         this.start_time = start_time;
 
-        var sections = $('div.slide');
-        var section_length = sections.length;
-        for (var i = 0; i < section_length; i++) {
-            sections[i].setAttribute('id', 'mg_slide' + i);
-        }
-        this.sections = sections;
-
+        this.init_sections();
         this.init_page();
         this.rewrite();
 
@@ -25,6 +24,14 @@ var Presen = {
         setInterval(
             function () { self.cron(); }, 500
         );
+    },
+    init_sections: function() {
+        var sections = $('div.slide');
+        var section_length = sections.length;
+        for (var i = 0; i < section_length; i++) {
+            sections[i].setAttribute('id', 'mg_slide' + i);
+        }
+        this.sections = sections;
     },
     init_page: function () {
         if (location.hash === "") {
@@ -57,12 +64,12 @@ var Presen = {
         var now = new Date();
         $("#time").html(now.hms());
 
-        $("#current_page").html((Presen.page+1));
+        $("#current_page").html(Presen.page+1);
 
         var used_time = parseInt( (now - Presen.start_time)/1000, 10 );
         var used_min = parseInt(used_time/60.0, 10);
         var used_sec = parseInt( used_time - (used_min*60.0), 10 );
-        $('#used_time').html('' + Presen.two_column(used_min) + ':' + Presen.two_column(used_sec));
+        $('#used_time').html('' + two_column(used_min) + ':' + two_column(used_sec));
 
         var body = $(window);
         var topic = $('#topics');
@@ -77,11 +84,6 @@ var Presen = {
         $("#topics").html(slide);
         location.hash  = "#" + p;
     },
-    two_column: function (i) {
-        var m = "" + i;
-        if (m.length == 1) { m = "0"+m; }
-        return m;
-    },
     change_font_size: function (selector, factor) {
         var px = $(selector).css('font-size');
             px = parseInt(px.replace('px', ''), 10) + factor;
@@ -93,7 +95,7 @@ var Presen = {
 };
 
 Date.prototype.hms = function () {
-    return '' + Presen.two_column(this.getHours()) + ":" + Presen.two_column(this.getMinutes()) + ":" + Presen.two_column(this.getSeconds());
+    return '' + two_column(this.getHours()) + ":" + two_column(this.getMinutes()) + ":" + two_column(this.getSeconds());
 };
 
 Presen.observe_key_event = function () {

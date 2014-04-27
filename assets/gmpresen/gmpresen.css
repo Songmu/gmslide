@@ -185,12 +185,9 @@ footer {
 #mg_slide0 h2 {
     background: none;
     border: none;
-    text-align: right;
-    margin-right: 20px;
-    padding-right: 0;
 }
 
-#mg_slide0 h3 {
+#mg_slide0 h2, #mg_slide0 h3 {
     text-align: right;
     margin-right: 20px;
     padding-right: 0;

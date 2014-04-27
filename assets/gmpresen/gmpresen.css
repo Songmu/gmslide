@@ -86,9 +86,17 @@ header {
     color: #eee;
 }
 
-ul, pre {
-    margin: 0;
-    line-height: 1em;
+pre {
+    margin: 0 auto;
+    background-color: #f3f3f3;
+    border: 1px solid #d5d5d5;
+    width: 80%;
+}
+
+pre code {
+    display: block;
+    line-height: 1.2;
+    font-size: 1em;
 }
 
 blockquote, q {
@@ -177,10 +185,14 @@ footer {
 #mg_slide0 h2 {
     background: none;
     border: none;
+    text-align: right;
+    margin-right: 20px;
+    padding-right: 0;
 }
 
 #mg_slide0 h3 {
-    margin-top: 0.3em;
-    font-size: 1.2em;
+    text-align: right;
+    margin-right: 20px;
+    padding-right: 0;
 }
 

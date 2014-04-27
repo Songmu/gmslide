@@ -1,7 +1,7 @@
 presenter: Songmu
-presentation_title: 姫ヒャクを支える技術
-presentation_place: "yokohamapm #10"
-presentation_date: Feb 21st, 2014
+presentation_title: テストスライド
+presentation_place: "sample #1"
+presentation_date: Apr 25th, 2014
 ---
 Profile
 -------
@@ -16,23 +16,20 @@ Profile
 - Puncheur作者
 - Web Applicationを何故か2つCPANにあげている
 
-姫騎士と最後の百竜戦争
-----------------------
+Code
+----
 
-![姫騎士と最後の百竜戦争](images/princess.png)
+はろーわーるど
 
-- スマホで遊ぶアクションRPG
-- Android版 2/7リリース
-- 40万ダウンロード突破
-- iPhone版近日配信予定
-- 姫ヒャクと略すらしい
-- ArkでTengでTime::Piece::Plusな感じ
+    use strict;
+    use warnings;
+    print 'Hello';
 
-WEB+DB PRESS に寄稿しました
----------------------------
 
-![webdb vol79](images/webdb79.jpg)
+引用
+----
 
-- Perl Hackers Hubなのにcronの話で9ページ
-- App::RunCronの細かい使い方を本邦初公開
-- 2/22(明日!)発売
+> 監視とは継続的なテストである
+> <cite>kazuho oku</cite>
+
+

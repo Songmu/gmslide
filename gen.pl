@@ -18,9 +18,7 @@ state $md = Text::Markdown::Slidy->new(
     md => Text::Markdown::Discount->new,
 );
 my $slides = $md->markdown($body);
-state $tx = Text::Xslate->new(
-    path => [qw/tmpl/],
-);
+state $tx = Text::Xslate->new;
 my $html = $tx->render('index.tx' => {
     %$headers,
     slides => $slides,
